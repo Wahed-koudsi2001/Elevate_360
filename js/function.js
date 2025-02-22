@@ -421,9 +421,6 @@
         this.style.display = 'none';
     });
 
-    document.getElementById('overlay-pop-2').addEventListener('click', function () {
-        this.style.display = 'none';
-    });
 
     window.addEventListener("scroll", () => {
         const header = document.querySelector(".main-header");
@@ -456,12 +453,39 @@
             });
         });
     });
-
-    setTimeout(() => {
-        const overlay = document.getElementById('overlay-pop-2');
-        if (overlay) {
-            overlay.style.display = 'block';
-        }
-    }, 10000);
-
 })(jQuery);
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('#menu .nav-link[href^="#"]');
+    const sections = Array.from(navLinks).map(link =>
+        document.querySelector(link.getAttribute('href'))
+    ).filter(section => section !== null);
+
+    function updateActiveLink() {
+        const scrollPosition = window.scrollY + (window.innerHeight / 2);
+        let currentSection = null;
+
+        // Find the first section that is below the middle of the viewport
+        for (const section of sections) {
+            if (section.offsetTop <= scrollPosition) {
+                currentSection = section;
+            } else {
+                break;
+            }
+        }
+
+        // Fallback to last section if not found
+        currentSection = currentSection || sections[sections.length - 1];
+
+        navLinks.forEach(link => {
+            const isActive = link.hash === `#${currentSection.id}`;
+            link.classList.toggle('active', isActive);
+        });
+    }
+
+    // Update immediately on scroll
+    window.addEventListener('scroll', updateActiveLink);
+
+    // Initial update
+    updateActiveLink();
+});

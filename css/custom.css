@@ -346,7 +346,7 @@ body {
 }
 
 .section-title h1 {
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 300;
     line-height: 1.2em;
     color: #fff;
@@ -407,7 +407,7 @@ body {
 header.main-header {
     border-bottom: 1px solid #06bcfb;
     position: fixed;
-    z-index: 99999;
+    z-index: 999;
     transition: 0.2s;
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
@@ -917,7 +917,7 @@ body:has(.offcanvas) {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 280px 0 120px;
+    padding: 250px 0 120px;
     min-height: 100vh;
 }
 
@@ -1006,11 +1006,37 @@ body:has(.offcanvas) {
 .hero-content-body {
     display: flex;
     align-items: center;
-    margin-left: 150px;
 }
-
+.top-top-of-form {
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.top-top-of-form #contactForm {
+    display: flex;
+    gap: 0 20px;
+    flex-wrap: wrap;
+}
+.top-top-of-form #contactForm .form-group {
+    width: calc(50% - 10px);
+}
+.top-top-of-form #contactForm .form-control {
+    padding: 0.8rem 0.75rem !important;
+}
+.top-top-of-form #contactForm .textarea,
+.top-top-of-form #contactForm .contact-form-btn {
+    width: 100% !important;
+}
+.top-top-of-form .top-of-form {
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
 .hero-content-video {
-    width: 35%;
+    width: 30%;
     display: flex;
     align-items: center;
 }
@@ -1060,7 +1086,7 @@ body:has(.offcanvas) {
 }
 
 .hero-video-content {
-    width: 65%;
+    width: 100%;
 }
 
 .hero-video-content p {
@@ -1112,7 +1138,7 @@ body:has(.offcanvas) {
 
 .scrolling-content span img {
     width: 100%;
-    max-width: 24px;
+    max-width: 40px;
     margin-right: 40px;
 }
 
@@ -2063,7 +2089,7 @@ body:has(.offcanvas) {
 
 .project-tag a {
     display: block;
-    background-color: #000;
+    background-color: var(--accent-color);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     color: var(--text-color);
@@ -4251,6 +4277,120 @@ body:has(.offcanvas) {
     color: var(--text-color);
 }
 
+.pricing-box {
+    position: relative;
+    background: url(../images/pricing-box-bg-shape.svg) no-repeat;
+    background-position: top left;
+    background-size: auto;
+    height: calc(100% - 30px);
+    border: 1px solid var(--accent-color);
+    border-radius: 30px;
+    padding: 40px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.pricing-header,
+.pricing-price,
+.pricing-content,
+.pricing-body {
+    margin-bottom: 30px;
+}
+.pricing-header h3 {
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.pricing-header p {
+    margin-bottom: 0;
+}
+.pricing-price {
+    background-color: var(--dark-color);
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px;
+}
+.pricing-price h2 {
+    font-size: 50px;
+    color: var(--accent-color);
+}
+.pricing-price h2 sub {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    bottom: 0;
+    opacity: 80%;
+}
+.pricing-box.highlight-box .pricing-price h2,
+.pricing-box.highlight-box .pricing-price h2 sub {
+    color: var(--dark-color);
+}
+.pricing-content h3 {
+    font-size: 22px;
+    color: var(--accent-color);
+}
+.btn-highlighted {
+    position: relative;
+    display: inline-block;
+    line-height: 1.3em;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    background: var(--accent-color);
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 100px;
+    padding: 15px 30px;
+    text-align: center;
+    border: none;
+    overflow: hidden;
+    transition: all 0.4sease-in-out;
+    z-index: 1;
+}
+.pricing-btn .btn-highlighted::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    border-radius: 100px;
+    opacity: 20%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.pricing-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.pricing-list ul li {
+    position: relative;
+    text-transform: capitalize;
+    line-height: normal;
+    padding-left: 30px;
+    margin-bottom: 25px;
+}
+.pricing-box.highlight-box .pricing-price {
+    background-color: var(--accent-color);
+}
+.pricing-list ul li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: url("../images/button.png") no-repeat center center/cover;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
 .post-entry ul {
     padding: 0;
     margin: 20px 0 20px;
@@ -5008,99 +5148,6 @@ body:has(.offcanvas) {
 /************************************/
 /***      27. Pricing Page css	  ***/
 /************************************/
-
-.page-pricing {
-    padding: 80px 0;
-}
-
-.pricing-box {
-    position: relative;
-    background: url(../images/service-bg.svg) no-repeat;
-    background-position: top left;
-    background-size: auto;
-    border: 1px solid #06bcfb;
-    border-radius: 30px;
-    padding: 50px;
-    overflow: hidden;
-    background-color: #fff;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.pricing-box-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 30px;
-    border-bottom: 1px solid #06bcfb;
-    padding-bottom: 40px;
-}
-
-.pricing-title {
-    width: calc(60% - 15px);
-}
-
-.pricing-title h3 {
-    font-size: 30px;
-    text-transform: capitalize;
-    margin-bottom: 10px;
-}
-
-.pricing-title p {
-    margin-bottom: 0;
-}
-
-.pricing-price {
-    text-align: center;
-}
-
-.pricing-price h2 {
-    font-size: 50px;
-    color: var(--accent-color);
-}
-
-.pricing-price h2 sup {
-    font-size: 22px;
-    color: var(--primary-color);
-}
-
-.pricing-price h2 sub {
-    bottom: 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--primary-color);
-}
-
-.pricing-list {
-    margin-bottom: 40px;
-}
-
-.pricing-list ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.pricing-list ul li {
-    position: relative;
-    width: calc(33.333% - 20px);
-    text-transform: capitalize;
-}
-.pricing-list ul li label {
-    cursor: pointer;
-    user-select: none;
-}
-.pricing-list ul li input {
-    margin-right: 8px;
-    margin-top: 5px;
-}
-
-.pricing-btn .btn-highlighted {
-    width: 100%;
-    text-align: center;
-}
 
 /************************************/
 /***    28. Testimonial Page css  ***/
@@ -6698,10 +6745,6 @@ body:has(.offcanvas) {
         padding: 30px;
     }
 
-    .page-pricing {
-        padding: 80px 0 40px;
-    }
-
     .pricing-box-list {
         gap: 30px;
     }
@@ -6723,23 +6766,6 @@ body:has(.offcanvas) {
     .pricing-title h3 {
         font-size: 26px;
         margin-bottom: 5px;
-    }
-
-    .pricing-price {
-        width: calc(48% - 7.5px);
-        margin-bottom: 20px;
-    }
-
-    .pricing-price h2 {
-        font-size: 40px;
-    }
-
-    .pricing-price h2 sup {
-        font-size: 20px;
-    }
-
-    .pricing-price h2 sub {
-        font-size: 14px;
     }
 
     .pricing-list ul {
@@ -7713,14 +7739,6 @@ body:has(.offcanvas) {
         font-size: 22px;
     }
 
-    .pricing-price h2 {
-        font-size: 30px;
-    }
-
-    .pricing-price h2 sup {
-        font-size: 16px;
-    }
-
     .pricing-list ul li {
         width: 100%;
     }
@@ -8067,6 +8085,12 @@ html {
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
+    }
+    .top-top-of-form #contactForm {
+        gap: 0 10px;
+    }
+    .top-top-of-form #contactForm .form-group {
+        width: calc(50% - 5px);
     }
     .whatsapp span {
         display: none;

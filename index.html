@@ -49,7 +49,7 @@
     <!-- Preloader End -->
 
     <!-- Header Start -->
-    <header class="main-header" id="home">
+    <header class="main-header">
         <div class="header-sticky">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
@@ -69,8 +69,8 @@
                                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#why_us">Why us</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#prices">Prices</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a>
                                 <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a>
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="#contact_us">Contact us</a></li>
                             </ul>
@@ -191,7 +191,7 @@
     <!-- Header End -->
 
     <!-- Hero Section Start-->
-    <div class="hero hero-slider-layout">
+    <div class="hero hero-slider-layout" id="home">
         <div class="swiper">
             <div class="swiper-wrapper">
                 <!-- Hero Slide Start -->
@@ -201,8 +201,8 @@
                             Your browser does not support the video tag.
                         </video>
                         <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
+                            <div class="row gy-4">
+                                <div class="col-lg-6">
                                     <!-- Hero Content Start -->
                                     <div class="hero-content">
                                         <!-- Section Title Start -->
@@ -244,7 +244,7 @@
                                                 <!-- Video Play Button Start -->
                                                 <div class="video-play-button">
                                                     <a href="https://www.youtube.com/watch?v=Y-x0efG1seA"
-                                                        class="popup-video" data-cursor-text="About the company">
+                                                        class="popup-video" data-cursor-text="Overview">
                                                         <i class="fa-solid fa-play"></i>
                                                     </a>
                                                 </div>
@@ -264,14 +264,49 @@
                                             <!-- Hero Video Content End -->
                                         </div>
                                         <!-- Hero Content Body End -->
-
-                                        <!-- Hero Button Start -->
-                                        <div class="hero-btn wow fadeInUp" data-wow-delay="0.25s">
-                                            <a href="#contact_us" class="btn-default">Contact US</a>
-                                        </div>
-                                        <!-- Hero Button End -->
                                     </div>
                                     <!-- Hero Content End -->
+                                </div>
+                                <div class="wow fadeInUp col-lg-6 col-md-8 mx-auto col-11 top-top-of-form position-relative z-3"
+                                    style="background-color: #fff;" data-wow-delay="0.25s">
+                                    <form id="contactForm" action="#" method="POST" data-toggle="validator"
+                                        novalidate="true">
+                                        <div class="top-of-form">
+                                            <h2>
+                                                Get Your Free Quote
+                                            </h2>
+                                            <p>
+                                                Fill in the form below & we’ll
+                                                get back to you as soon as possible!
+                                            </p>
+                                        </div>
+                                        <div class="form-group mb-md-4 mb-2">
+                                            <input type="text" name="fname" class="form-control" id="fname"
+                                                placeholder="Full Name" required="">
+                                        </div>
+                                        <div class="form-group mb-md-4 mb-2">
+                                            <input type="number" name="lname" class="form-control" id="lname"
+                                                placeholder="Phone Number" required="">
+                                        </div>
+                                        <div class="form-group mb-md-4 mb-2">
+                                            <input type="email" name="phone" class="form-control" id="phone"
+                                                placeholder="E-mail" required="">
+                                        </div>
+                                        <div class="form-group mb-md-4 mb-2">
+                                            <input type="text" name="email" class="form-control" id="email"
+                                                placeholder="Subject" required="">
+                                        </div>
+                                        <div class="form-group textarea mb-md-4 mb-2">
+                                            <textarea name="message" class="form-control" id="message" rows="4"
+                                                placeholder="Message"></textarea>
+                                        </div>
+                                        <div class="contact-form-btn">
+                                            <button type="submit" class="btn-highlighted disabled">
+                                                submit message
+                                            </button>
+                                            <div id="msgSubmit" class="h3 hidden"></div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -288,29 +323,29 @@
         <!-- Scrolling Ticker Start -->
         <div class="scrolling-ticker-box">
             <div class="scrolling-content">
-                <span><img src="images/Icon white.svg" alt="icon">Digital Marketing</span>
-                <span><img src="images/Icon white.svg" alt="icon">Offline Marketing</span>
-                <span><img src="images/Icon white.svg" alt="icon">Business Management Solutions</span>
-                <span><img src="images/Icon white.svg" alt="icon">Video Shoots</span>
-                <span><img src="images/Icon white.svg" alt="icon">Event Planning ( Booth & Video Shoots )</span>
-                <span><img src="images/Icon white.svg" alt="icon">Branding & Design</span>
-                <span><img src="images/Icon white.svg" alt="icon">Insights & Strategy</span>
-                <span><img src="images/Icon white.svg" alt="icon">PR & Communications</span>
-                <span><img src="images/Icon white.svg" alt="icon">Analytics</span>
-                <span><img src="images/Icon white.svg" alt="icon">Operational Excellence</span>
-                <span><img src="images/Icon white.svg" alt="icon">Financial Mastery</span>
-                <span><img src="images/Icon white.svg" alt="icon">Human Potential</span>
-                <span><img src="images/Icon white.svg" alt="icon">Strategic Vision</span>
-                <span><img src="images/Icon white.svg" alt="icon">Tech Innovation</span>
-                <span><img src="images/Icon white.svg" alt="icon">Legal & Compliance</span>
-                <span><img src="images/Icon white.svg" alt="icon">Customer-focused</span>
-                <span><img src="images/Icon white.svg" alt="icon">Sustainability & Ethics</span>
-                <span><img src="images/Icon white.svg" alt="icon">Impactful Content</span>
-                <span><img src="images/Icon white.svg" alt="icon">Multiple Formats</span>
-                <span><img src="images/Icon white.svg" alt="icon">Professional Quality</span>
-                <span><img src="images/Icon white.svg" alt="icon">Creative Booth Design</span>
-                <span><img src="images/Icon white.svg" alt="icon">Excellent Video Production</span>
-                <span><img src="images/Icon white.svg" alt="icon">Event Planning Expertise</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Digital Marketing</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Offline Marketing</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Business Management Solutions</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Video Shoots</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Event Planning ( Booth & Video Shoots )</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Branding & Design</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Insights & Strategy</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">PR & Communications</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Analytics</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Operational Excellence</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Financial Mastery</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Human Potential</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Strategic Vision</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Tech Innovation</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Legal & Compliance</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Customer-focused</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Sustainability & Ethics</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Impactful Content</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Multiple Formats</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Professional Quality</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Creative Booth Design</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Excellent Video Production</span>
+                <span><img src="images/asterisk-icon.svg" alt="icon">Event Planning Expertise</span>
             </div>
 
             <div class="scrolling-content">
@@ -750,320 +785,262 @@
     </div>
     <!-- Why Choose us Section End -->
 
+    <!-- Page Pricing Start -->
     <div class="page-pricing" id="prices">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-7">
+                    <!-- Section Title Start -->
                     <div class="section-title">
-                        <h3 class="wow fadeInUp">Prices</h3>
-                        <h2 class="text-anime-style-3">
-                            Select service you need
+                        <h3 class="wow fadeInUp">prices</h3>
+                        <h2 class="text-anime-style-3">The expertise you need for your <span>growth</span> journey
+                            Digital</span>
                         </h2>
                     </div>
+                    <!-- Section Title End -->
+                </div>
+
+                <div class="col-lg-5">
+                    <!-- Section Title Content Start -->
+                    <div class="section-title-content wow fadeInUp" data-wow-delay="0.25s">
+                        <p>Our dedicated team is committed to understanding your unique needs, ensuring we deliver
+                            innovative strategies that
+                            deliver results.
+
+                            With a focus on quality
+
+                            and integrity.</p>
+                    </div>
+                    <!-- Section Title Content End -->
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="pricing-box-list">
-                        <div class="pricing-box wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                            <!-- Pricing List Start -->
-                            <div class="pricing-list">
-                                <h3 class="mb-3">Social Media Ads</h3>
-                                <div class="tile-wrapper">
-                                    <div class="tile-container">
-                                        <div class="tile two-thirds-tile">
-                                            <div class="area">
-                                                <div class="tile-container">
-                                                    <div class="tile checkbox-tile textcenter mb" price-data="350">
-                                                        <h4 class="product">Google Ads</h4>
-                                                        <input id="GoogleAds" type="checkbox" />
-                                                        <label class="check-box" for="GoogleAds"></label>
-                                                    </div>
-                                                    <div class="tile checkbox-tile textcenter mb" price-data="500">
-                                                        <h4 class="product">Facebook Ads</h4>
-                                                        <input id="Facebook Ads" type="checkbox" />
-                                                        <label class="check-box" for="Facebook Ads"></label>
-                                                    </div>
-                                                    <div class="tile checkbox-tile textcenter mb" price-data="250">
-                                                        <h4 class="product">Instagram Ads</h4>
-                                                        <input id="Instagram Ads" type="checkbox" />
-                                                        <label class="check-box" for="Instagram Ads"></label>
-                                                    </div>
-                                                    <div class="tile checkbox-tile textcenter mb" price-data="750">
-                                                        <h4 class="product">Snapchat Ads</h4>
-                                                        <input id="Snapchat Ads" type="checkbox" />
-                                                        <label class="check-box" for="Snapchat Ads"></label>
-                                                    </div>
-                                                    <div class="tile checkbox-tile textcenter mb" price-data="100">
-                                                        <h4 class="product">TikTok Ads</h4>
-                                                        <input id="TikTok" type="checkbox" />
-                                                        <label class="check-box" for="TikTok"></label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pricing-list">
-                                <h3 class="mb-3">Digital Marketing</h3>
-                                <div class="tile-wrapper">
-                                    <div class="tile-container">
-                                        <div class="tile two-thirds-tile">
-                                            <div class="area">
-                                                <div class="tile-container">
-                                                    <div class="tile checkbox-tile textcenter mb" price-data="750">
-                                                        <h4 class="product">Landing Page</h4>
-                                                        <input id="Landing Page" type="checkbox" />
-                                                        <label class="check-box" for="Landing Page"></label>
-                                                    </div>
-                                                    <div class="tile checkbox-tile textcenter mb" price-data="1500">
-                                                        <h4 class="product">WebSite</h4>
-                                                        <input id="WebSite" type="checkbox" />
-                                                        <label class="check-box" for="WebSite"></label>
-                                                    </div>
-                                                    <div class="tile checkbox-tile textcenter mb" price-data="2500">
-                                                        <h4 class="product">E-commerce</h4>
-                                                        <input id="Content" type="checkbox" />
-                                                        <label class="check-box" for="Content"></label>
-                                                    </div>
-                                                    <div class="tile checkbox-tile textcenter mb" price-data="750">
-                                                        <h4 class="product">SEO</h4>
-                                                        <input id="SEO" type="checkbox" />
-                                                        <label class="check-box" for="SEO"></label>
-                                                    </div>
-                                                    <div class="tile checkbox-tile textcenter mb" price-data="100">
-                                                        <h4 class="product">Cloud</h4>
-                                                        <input id="Cloud" type="checkbox" />
-                                                        <label class="check-box" for="Cloud"></label>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Pricing List End -->
-
-                            <!-- Pricing Button Start -->
-                            <div class="row align-items-center justify-content-center">
-                                <div class="pricing-price col-md-6">
-                                    <h2><sup>$</sup>0<sub>/per month</sub></h2>
-                                </div>
-                                <div class="pricing-btn col-md-6">
-                                    <a href="https://api.whatsapp.com/send?phone=971585856774" target="_blank"
-                                        class="btn-highlighted">get
-                                        started</a>
-                                </div>
-                            </div>
-                            <!-- Pricing Button End -->
+                <div class="col-lg-4 col-md-6">
+                    <!-- Pricing Box Start -->
+                    <div class="pricing-box wow fadeInUp">
+                        <!-- Pricing Header Start -->
+                        <div class="pricing-header">
+                            <h3>regular plan</h3>
+                            <p>Start at $29 Start at $49</p>
                         </div>
+                        <!-- Pricing Header End -->
+
+                        <!-- Pricing Price Start -->
+                        <div class="pricing-price">
+                            <h2>$29<sub>/per month</sub></h2>
+                        </div>
+                        <!-- Pricing Price End -->
+
+                        <!-- Pricing Box Body Start -->
+                        <div class="pricing-body">
+                            <div class="pricing-content">
+                                <h3>What included?</h3>
+                            </div>
+                            <div class="pricing-list">
+                                <ul>
+                                    <li>24/7 technical support</li>
+                                    <li>software installation and updates</li>
+                                    <li>detailed performance reporting</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Pricing Box Body End -->
+
+                        <!-- Pricing Button Start -->
+                        <div class="pricing-btn">
+                            <a href="#" class="btn-highlighted">get started</a>
+                        </div>
+                        <!-- Pricing Button End -->
                     </div>
+                    <!-- Pricing Box End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Pricing Box Start -->
+                    <div class="pricing-box highlight-box wow fadeInUp" data-wow-delay="0.2s">
+                        <!-- Pricing Header Start -->
+                        <div class="pricing-header">
+                            <h3>standard plan</h3>
+                            <p>Start at $39 Start at $49</p>
+                        </div>
+                        <!-- Pricing Header End -->
+
+                        <!-- Pricing Price Start -->
+                        <div class="pricing-price">
+                            <h2>$39<sub>/per month</sub></h2>
+                        </div>
+                        <!-- Pricing Price End -->
+
+                        <!-- Pricing Box Body Start -->
+                        <div class="pricing-body">
+                            <div class="pricing-content">
+                                <h3>What included?</h3>
+                            </div>
+                            <div class="pricing-list">
+                                <ul>
+                                    <li>24/7 technical support</li>
+                                    <li>software installation and updates</li>
+                                    <li>detailed performance reporting</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Pricing Box Body End -->
+
+                        <!-- Pricing Button Start -->
+                        <div class="pricing-btn">
+                            <a href="#" class="btn-highlighted">get started</a>
+                        </div>
+                        <!-- Pricing Button End -->
+                    </div>
+                    <!-- Pricing Box End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Pricing Box Start -->
+                    <div class="pricing-box wow fadeInUp" data-wow-delay="0.4s">
+                        <!-- Pricing Header Start -->
+                        <div class="pricing-header">
+                            <h3>ultimate plan</h3>
+                            <p>Start at $49 Start at $49</p>
+                        </div>
+                        <!-- Pricing Header End -->
+
+                        <!-- Pricing Price Start -->
+                        <div class="pricing-price">
+                            <h2>$49<sub>/per month</sub></h2>
+                        </div>
+                        <!-- Pricing Price End -->
+
+                        <!-- Pricing Box Body Start -->
+                        <div class="pricing-body">
+                            <div class="pricing-content">
+                                <h3>What included?</h3>
+                            </div>
+                            <div class="pricing-list">
+                                <ul>
+                                    <li>24/7 technical support</li>
+                                    <li>software installation and updates</li>
+                                    <li>detailed performance reporting</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Pricing Box Body End -->
+
+                        <!-- Pricing Button Start -->
+                        <div class="pricing-btn">
+                            <a href="#" class="btn-highlighted">get started</a>
+                        </div>
+                        <!-- Pricing Button End -->
+                    </div>
+                    <!-- Pricing Box End -->
                 </div>
             </div>
         </div>
     </div>
+    <!-- Page Pricing End -->
 
-    <!-- Our Portfolio Section Start -->
-    <!-- <div class="our-portfolio">
+    <!-- Photo Gallery Section Start -->
+    <div class="page-gallery" id="gallery">
         <div class="container">
             <div class="row section-row align-items-center">
                 <div class="col-lg-7">
+                    <!-- Section Title Start -->
                     <div class="section-title">
-                        <h3 class="wow fadeInUp">Portfolio Highlights</h3>
-                        <h2 class="text-anime-style-3">Brands with <span>advanced digital solutions</span> and designs
+                        <h3 class="wow fadeInUp">gallery</h3>
+                        <h2 class="text-anime-style-3">The expertise you need for your <span>growth</span> journey
+                            Digital</span>
                         </h2>
                     </div>
+                    <!-- Section Title End -->
                 </div>
 
                 <div class="col-lg-5">
-                    <div class="section-title-content wow fadeInUp mb-4" data-wow-delay="0.25s">
-                        <p>
-                            Learn about our long record of achievement and innovation. See how we've changed firms with
-                            captivating digital
-                            campaigns and effective operational methods.
-                        </p>
+                    <!-- Section Title Content Start -->
+                    <div class="section-title-content wow fadeInUp" data-wow-delay="0.25s">
+                        <p>Our dedicated team is committed to understanding your unique needs, ensuring we deliver
+                            innovative strategies that
+                            deliver results.
+
+                            With a focus on quality
+
+                            and integrity.</p>
                     </div>
+                    <!-- Section Title Content End -->
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="our-Project-nav wow fadeInUp" data-wow-delay="0.25s">
-                        <ul>
-                            <li><a href="javascript:void(0)"
- class="active-btn" data-filter="*">الكل</a></li>
-                            <li><a href="javascript:void(0)"
- data-filter=".branding">العلامة التجارية والهوية</a></li>
-                            <li><a href="javascript:void(0)"
- data-filter=".web">تصميم الويب</a></li>
-                            <li><a href="javascript:void(0)"
- data-filter=".digital">التسويق الرقمي</a></li>
-                            <li><a href="javascript:void(0)"
- data-filter=".Videos">إنتاج الفيديوهات</a></li>
-                        </ul>
+            <!-- gallery section start -->
+            <div class="row gallery-items page-gallery-box">
+                <div class="col-lg-4 col-6">
+                    <!-- image gallery start -->
+                    <div class="photo-gallery wow fadeInUp" data-wow-delay="0.2s" data-cursor-text="View">
+                        <a href="images/projects/Brands/Beyond Brochure.webp">
+                            <figure class="image-anime">
+                                <img src="images/projects/Brands/Beyond Brochure.webp" alt="image">
+                            </figure>
+                        </a>
                     </div>
+                    <!-- image gallery end -->
                 </div>
-
-                <div class="col-lg-12">
-                    <div class="row project-item-boxes align-items-center">
-                        <div class="col-lg-4 col-md-6 project-item-box Videos">
-                            <div class="project-item wow fadeInUp">
-                                <div class="project-image">
-                                    <figure class="image-anime">
-                                        <img src="images/projects/Videos Production/thum-1.png" alt="image">
-                                    </figure>
-
-                                    <div class="project-tag">
-                                        <a href="https://api.whatsapp.com/send?phone=971585856774" target="_blank">إنتاج الفيديوهات</a>
-                                    </div>
-
-                                    <div class="video-play-button project-btn">
-                                        <a href="images/projects/Videos Production/Shopsze Video V2 Wide.mp4"
-                                            class="popup-video" data-cursor-text="تشغيل">
-                                            <i class="fa-solid fa-play" style="color: #000; font-size: 30px;"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="project-content">
-                                    <h3>فيديو المتاجر</h3>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 project-item-box Videos">
-                            <div class="project-item wow fadeInUp">
-                                <div class="project-image">
-                                    <figure class="image-anime">
-                                        <img src="images/projects/Videos Production/thum-2.png" alt="image">
-                                    </figure>
-
-                                    <div class="project-tag">
-                                        <a href="https://api.whatsapp.com/send?phone=971585856774" target="_blank">إنتاج الفيديوهات</a>
-                                    </div>
-
-                                    <div class="video-play-button project-btn">
-                                        <a href="images/projects/Videos Production/Copy of Cco Beyond.mp4"
-                                            class="popup-video" data-cursor-text="تشغيل">
-                                            <i class="fa-solid fa-play" style="color: #000; font-size: 30px;"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="project-content">
-                                    <h3>نسخة من Cco Beyond</h3>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 project-item-box branding">
-                            <div class="project-item wow fadeInUp">
-                                <div class="project-image">
-                                    <figure class="image-anime">
-                                        <img src="images/projects/Posts/06.png" alt="image">
-                                    </figure>
-
-                                    <div class="project-tag">
-                                        <a href="https://api.whatsapp.com/send?phone=971585856774" target="_blank">العلامة التجارية والهوية</a>
-                                    </div>
-
-                                    <div class="video-play-button project-btn">
-                                        <a href="images/projects/Posts/06.png" class="popup-image"
-                                            data-cursor-text="عرض">
-                                            <i class="fa-solid fa-image" style="color: #000; font-size: 30px;"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="project-content">
-                                    <h3>نسخة من Cco Beyond</h3>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 project-item-box branding">
-                            <div class="project-item wow fadeInUp">
-                                <div class="project-image">
-                                    <figure class="image-anime">
-                                        <img src="images/projects/Posts/1.png" alt="image">
-                                    </figure>
-
-                                    <div class="project-tag">
-                                        <a href="https://api.whatsapp.com/send?phone=971585856774" target="_blank">العلامة التجارية والهوية</a>
-                                    </div>
-
-                                    <div class="video-play-button project-btn">
-                                        <a href="images/projects/Posts/1.png" class="popup-image"
-                                            data-cursor-text="عرض">
-                                            <i class="fa-solid fa-image" style="color: #000; font-size: 30px;"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="project-content">
-                                    <h3>بطاقات العمل</h3>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 project-item-box digital">
-                            <div class="project-item wow fadeInUp">
-                                <div class="project-image">
-                                    <figure class="image-anime">
-                                        <img src="images/projects/Posts/2.png" alt="image">
-                                    </figure>
-
-                                    <div class="project-tag">
-                                        <a href="https://api.whatsapp.com/send?phone=971585856774" target="_blank">التسويق الرقمي</a>
-                                    </div>
-
-                                    <div class="video-play-button project-btn">
-                                        <a href="images/projects/Posts/2.png" class="popup-image"
-                                            data-cursor-text="عرض">
-                                            <i class="fa-solid fa-image" style="color: #000; font-size: 30px;"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="project-content">
-                                    <h3>إعلانات جوجل</h3>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 project-item-box digital">
-                            <div class="project-item wow fadeInUp">
-                                <div class="project-image">
-                                    <figure class="image-anime">
-                                        <img src="images/projects/Posts/3.png" alt="image">
-                                    </figure>
-
-                                    <div class="project-tag">
-                                        <a href="https://api.whatsapp.com/send?phone=971585856774" target="_blank">التسويق الرقمي</a>
-                                    </div>
-
-                                    <div class="video-play-button project-btn">
-                                        <a href="images/projects/Posts/3.png" class="popup-image"
-                                            data-cursor-text="عرض">
-                                            <i class="fa-solid fa-image" style="color: #000; font-size: 30px;"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="project-content">
-                                    <h3>إعلانات جوجل</h3>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-lg-4 col-6">
+                    <!-- image gallery start -->
+                    <div class="photo-gallery wow fadeInUp" data-wow-delay="0.2s" data-cursor-text="View">
+                        <a href="images/projects/Brands/Beyond Profile.webp">
+                            <figure class="image-anime">
+                                <img src="images/projects/Brands/Beyond Profile.webp" alt="image">
+                            </figure>
+                        </a>
                     </div>
+                    <!-- image gallery end -->
+                </div>
+                <div class="col-lg-4 col-6">
+                    <!-- image gallery start -->
+                    <div class="photo-gallery wow fadeInUp" data-wow-delay="0.2s" data-cursor-text="View">
+                        <a href="images/projects/Brands/Business Cards .webp">
+                            <figure class="image-anime">
+                                <img src="images/projects/Brands/Business Cards .webp" alt="image">
+                            </figure>
+                        </a>
+                    </div>
+                    <!-- image gallery end -->
+                </div>
+                <div class="col-lg-4 col-6">
+                    <!-- image gallery start -->
+                    <div class="photo-gallery wow fadeInUp" data-wow-delay="0.2s" data-cursor-text="View">
+                        <a href="images/projects/Brands/Car Stickers.webp">
+                            <figure class="image-anime">
+                                <img src="images/projects/Brands/Car Stickers.webp" alt="image">
+                            </figure>
+                        </a>
+                    </div>
+                    <!-- image gallery end -->
+                </div>
+                <div class="col-lg-4 col-6">
+                    <!-- image gallery start -->
+                    <div class="photo-gallery wow fadeInUp" data-wow-delay="0.2s" data-cursor-text="View">
+                        <a href="images/projects/Brands/Logos.webp">
+                            <figure class="image-anime">
+                                <img src="images/projects/Brands/Logos.webp" alt="image">
+                            </figure>
+                        </a>
+                    </div>
+                    <!-- image gallery end -->
+                </div>
+                <div class="col-lg-4 col-6">
+                    <!-- image gallery start -->
+                    <div class="photo-gallery wow fadeInUp" data-wow-delay="0.2s" data-cursor-text="View">
+                        <a href="images/projects/Brands/Milaknight Profile.webp">
+                            <figure class="image-anime">
+                                <img src="images/projects/Brands/Milaknight Profile.webp" alt="image">
+                            </figure>
+                        </a>
+                    </div>
+                    <!-- image gallery end -->
                 </div>
             </div>
+            <!-- gallery section end -->
         </div>
-    </div> -->
-    <!-- Our Portfolio Section End -->
+    </div>
+    <!-- Photo Gallery Section End -->
 
     <!-- Our Testimonial Section Start -->
     <div class="our-testimonial" id="testimonials">
@@ -1265,8 +1242,7 @@
     </div>
     <!-- Our Testimonial Section End -->
 
-
-    <div class="our-blog" id="blogs">
+    <!-- <div class="our-blog" id="blogs">
         <div class="container">
             <div class="row section-row align-items-center">
                 <div class="col-lg-7">
@@ -1316,15 +1292,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Our Blog Section End -->
 
     <!-- Our FAQs Start -->
     <div class="our-faqs">
         <div class="container">
             <div class="row align-items-center">
-
-
                 <div class="col-lg-6">
                     <!-- Our FAQ Section Start -->
                     <div class="our-faq-section">
@@ -1722,7 +1696,7 @@
                         <div class="col-lg-12">
                             <!-- Footer Copyright Start -->
                             <div class="footer-copyright-text">
-                                <p>Copyright All Rights Reserved &copy; Elevate 360 2025</p>
+                                <p>Copyright All Rights Reserved 2025 &copy; Elevate 360</p>
                             </div>
                             <!-- Footer Copyright End -->
                         </div>
@@ -1743,23 +1717,6 @@
                 <div>
                     <img src="images/message.gif" alt="img">
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="overlay-pop" id="overlay-pop-2" style="display: none;">
-        <div class="pop-up pop-up-2">
-            <div class="msg">
-                <a href="https://api.whatsapp.com/send?phone=971585856774" target="_blank">
-                    <p>
-                        Get started with a free consultation! Share your goals, and we’ll provide expert advice to bring
-                        your vision to life—no
-                        obligations, just a step toward success. Contact us today!
-                    </p>
-                    <div>
-                        <img src="images/strategic-consulting.gif" alt="img">
-                    </div>
-                </a>
             </div>
         </div>
     </div>
@@ -1812,58 +1769,6 @@
     <script src="js/wow.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Select all navigation links
-            const navLinks = document.querySelectorAll('.nav-link');
-
-            // Get corresponding sections for each link
-            const sections = Array.from(navLinks).map(link => {
-                const href = link.getAttribute('href');
-                return document.querySelector(href);
-            });
-
-            // Function to update the active class
-            function setActiveSection() {
-                let closestSection = null;
-                let closestDistance = Infinity;
-
-                sections.forEach(section => {
-                    if (!section) return; // Skip if section not found
-
-                    const rect = section.getBoundingClientRect();
-                    const sectionMiddle = (rect.top + rect.bottom) / 2;
-                    const viewportMiddle = window.innerHeight / 2;
-                    const distance = Math.abs(sectionMiddle - viewportMiddle);
-
-                    if (distance < closestDistance) {
-                        closestDistance = distance;
-                        closestSection = section;
-                    }
-                });
-
-                // Update active class on navLinks
-                navLinks.forEach(link => {
-                    const href = link.getAttribute('href');
-                    if (closestSection && href === `#${closestSection.id}`) {
-                        link.classList.add('active');
-                    } else {
-                        link.classList.remove('active');
-                    }
-                });
-            }
-
-            // Throttle scroll event with requestAnimationFrame
-            let isScrolling;
-            window.addEventListener('scroll', () => {
-                window.cancelAnimationFrame(isScrolling);
-                isScrolling = window.requestAnimationFrame(setActiveSection);
-            });
-
-            // Initialize active section on page load
-            setActiveSection();
-        });
-    </script>
 </body>
 
 </html>
