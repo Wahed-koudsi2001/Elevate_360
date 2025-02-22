@@ -2739,11 +2739,6 @@ body:has(.offcanvas) {
     color: var(--primary-color);
 }
 
-.footer-main {
-    border-top: 1px solid var(--accent-color);
-    padding: 60px 0 0;
-}
-
 .footer-contact-item {
     display: flex;
     align-items: center;
@@ -2900,7 +2895,6 @@ body:has(.offcanvas) {
 .footer-copyright {
     border-top: 1px solid var(--accent-color);
     padding: 60px 0;
-    margin-top: 60px;
 }
 
 .footer-copyright-text {
