@@ -488,4 +488,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initial update
     updateActiveLink();
+
 });
