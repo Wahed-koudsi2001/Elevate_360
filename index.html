@@ -2243,6 +2243,13 @@
                 }
             });
         });
+        // Add click handler to all list items
+        document.querySelectorAll('.box-pricing-2 ul li').forEach(item => {
+            item.addEventListener('click', function () {
+                // Toggle the 'selected' class
+                this.classList.toggle('selected');
+            });
+        });
     </script>
 </body>
 
