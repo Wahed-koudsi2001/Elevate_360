@@ -8133,6 +8133,9 @@ html {
     color: white;
 }
 @media (max-width: 768px) {
+    .form-control {
+        font-size: 0.7rem;
+    }
     .pricing-price h2 {
         font-size: 36px;
         color: var(--accent-color);
@@ -8206,7 +8209,7 @@ html {
         max-width: 65px;
     }
     .vision-mission-item {
-        padding: 30px;
+        padding: 20px;
     }
     .our-vision-mission {
         padding: 40px;
@@ -8221,17 +8224,22 @@ html {
         height: 60px;
     }
     .vision-mission-header h3 {
-        font-size: 30px;
+        font-size: 24px;
         width: calc(100% - 60px);
     }
     .vision-mission-header .icon-box img {
-        max-width: 55px;
+        max-width: 50px;
     }
     .vision-mission-item {
         margin-bottom: 20px;
     }
     .our-vision-mission {
         padding: 0px;
+        margin-top: 50px;
+    }
+    .box-pricing-2 ul {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
     }
 }
 .ptb-100 {
