@@ -4267,7 +4267,7 @@ body:has(.offcanvas) {
     height: calc(100% - 30px);
     border: 1px solid var(--accent-color);
     border-radius: 30px;
-    padding: 40px;
+    padding: 40px 20px;
     margin-bottom: 30px;
     overflow: hidden;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -4293,7 +4293,7 @@ body:has(.offcanvas) {
     padding: 15px;
 }
 .pricing-price h2 {
-    font-size: 50px;
+    font-size: 52px;
     color: var(--accent-color);
 }
 .pricing-price h2 sub {
@@ -4309,8 +4309,9 @@ body:has(.offcanvas) {
     color: var(--dark-color);
 }
 .pricing-content h3 {
-    font-size: 22px;
+    font-size: 16px;
     color: var(--accent-color);
+    text-align: center;
 }
 .btn-highlighted {
     position: relative;
@@ -5269,7 +5270,7 @@ body:has(.offcanvas) {
 /************************************/
 
 .page-gallery {
-    padding: 160px 0 50px;
+    padding: 50px 0 50px;
 }
 
 .page-gallery-box .photo-gallery {
@@ -8062,7 +8063,80 @@ html {
 .navbar-nav .nav-link.show {
     color: var(--accent-color);
 }
+.box-pricing-2 {
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #000;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.pricing-header-2 {
+    background-color: #d7e5ec;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    padding: 50px 0px;
+    margin-bottom: 40px;
+}
+.box-pricing-2 ul {
+    color: #000;
+    list-style: none;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.box-pricing-2 ul li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    padding: 8px;
+    border-radius: 4px;
+    user-select: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+.box-pricing-2 ul li::before {
+    content: "\f00c";
+    font-family: "FontAwesome";
+    color: transparent;
+    font-weight: 700;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+.box-pricing-2 a {
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+    font-weight: 500;
+    background-color: var(--accent-color);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.box-pricing-2 ul li.selected::before {
+    background-color: var(--accent-color);
+    color: white;
+}
 @media (max-width: 768px) {
+    .pricing-price h2 {
+        font-size: 36px;
+        color: var(--accent-color);
+    }
     .whatsapp {
         width: 50px;
         height: 50px;
