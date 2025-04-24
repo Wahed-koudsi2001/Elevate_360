@@ -7855,9 +7855,11 @@ body:has(.offcanvas) {
 
     .pricing-box {
         width: 100%;
-        padding: 20px;
+        padding: 20px 10px;
     }
-
+    .box-pricing-2 ul li {
+        font-size: 16px;
+    }
     .pricing-box-content {
         margin-bottom: 20px;
         padding-bottom: 20px;
@@ -8301,6 +8303,9 @@ html {
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
+    }
+    .top-top-of-form {
+        padding: 20px 10px;
     }
     .top-top-of-form #contactForm {
         gap: 0 10px;
