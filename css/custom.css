@@ -4269,7 +4269,7 @@ body:has(.offcanvas) {
     border-radius: 30px;
     padding: 40px 20px;
     margin-bottom: 30px;
-    overflow: hidden;
+
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .pricing-header,
@@ -4278,8 +4278,11 @@ body:has(.offcanvas) {
 .pricing-body {
     margin-bottom: 30px;
 }
+.pricing-header {
+    text-align: center;
+}
 .pricing-header h3 {
-    font-size: 22px;
+    font-size: 24px;
     text-transform: capitalize;
     margin-bottom: 15px;
 }
@@ -4374,6 +4377,142 @@ body:has(.offcanvas) {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
 }
+
+.pricing-list-pakeges {
+    position: relative;
+}
+
+.pricing-list ul li.info-1,
+.pricing-list ul li.info-2,
+.pricing-list ul li.info-3,
+.pricing-list ul li.info-4,
+.pricing-list ul li.info-5,
+.pricing-list ul li.info-6,
+.pricing-list ul li.info-7,
+.pricing-list ul li.info-8,
+.pricing-list ul li.info-9,
+.pricing-list ul li.info-10,
+.pricing-list ul li.info-11,
+.pricing-list ul li.info-12 {
+    cursor: pointer;
+    position: relative;
+}
+
+.pricing-list ul li.info-1::before,
+.pricing-list ul li.info-2::before,
+.pricing-list ul li.info-3::before,
+.pricing-list ul li.info-4::before,
+.pricing-list ul li.info-5::before,
+.pricing-list ul li.info-6::before,
+.pricing-list ul li.info-7::before,
+.pricing-list ul li.info-8::before,
+.pricing-list ul li.info-9::before,
+.pricing-list ul li.info-10::before,
+.pricing-list ul li.info-11::before,
+.pricing-list ul li.info-12::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: url("../images/icons/info.png") no-repeat center center/cover;
+    transform: translateY(-50%);
+}
+
+.content-calendar,
+.content-calendar-2,
+.content-calendar-3,
+.content-calendar-4,
+.content-calendar-5,
+.content-calendar-6,
+.content-calendar-7,
+.content-calendar-8,
+.content-calendar-9,
+.content-calendar-10,
+.content-calendar-11,
+.content-calendar-12 {
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.534) 0px 7px 29px 0px;
+    padding: 30px;
+    z-index: 9;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+}
+
+.pricing-list ul li.info-1:hover ~ .content-calendar,
+.pricing-list ul li.info-2:hover ~ .content-calendar-2,
+.pricing-list ul li.info-3:hover ~ .content-calendar-3,
+.pricing-list ul li.info-4:hover ~ .content-calendar-4,
+.pricing-list ul li.info-5:hover ~ .content-calendar-5,
+.pricing-list ul li.info-6:hover ~ .content-calendar-6,
+.pricing-list ul li.info-7:hover ~ .content-calendar-7,
+.pricing-list ul li.info-8:hover ~ .content-calendar-8,
+.pricing-list ul li.info-9:hover ~ .content-calendar-9,
+.pricing-list ul li.info-10:hover ~ .content-calendar-10,
+.pricing-list ul li.info-11:hover ~ .content-calendar-11,
+.pricing-list ul li.info-12:hover ~ .content-calendar-12 {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.pricing-list-pakeges .content-calendar h6,
+.pricing-list-pakeges .content-calendar-2 h6,
+.pricing-list-pakeges .content-calendar-3 h6,
+.pricing-list-pakeges .content-calendar-5 h6,
+.pricing-list-pakeges .content-calendar-6 h6,
+.pricing-list-pakeges .content-calendar-10 h6,
+.pricing-list-pakeges .content-calendar-11 h6,
+.pricing-list-pakeges .content-calendar-12 h6 {
+    margin-bottom: 20px;
+}
+
+.pricing-list ul li > div[class^="content-calendar-4"],
+.pricing-list ul li > div[class^="content-calendar-5"],
+.pricing-list ul li > div[class^="content-calendar-6"],
+.pricing-list ul li > div[class^="content-calendar-7"],
+.pricing-list ul li > div[class^="content-calendar-8"],
+.pricing-list ul li > div[class^="content-calendar-9"],
+.pricing-list ul li > div[class^="content-calendar-10"],
+.pricing-list ul li > div[class^="content-calendar-11"],
+.pricing-list ul li > div[class^="content-calendar-12"] {
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.534) 0px 7px 29px 0px;
+    padding: 30px;
+    z-index: 9;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.pricing-list ul li:hover > div[class^="content-calendar-4"],
+.pricing-list ul li:hover > div[class^="content-calendar-5"],
+.pricing-list ul li:hover > div[class^="content-calendar-6"],
+.pricing-list ul li:hover > div[class^="content-calendar-7"],
+.pricing-list ul li:hover > div[class^="content-calendar-8"],
+.pricing-list ul li:hover > div[class^="content-calendar-9"],
+.pricing-list ul li:hover > div[class^="content-calendar-10"],
+.pricing-list ul li:hover > div[class^="content-calendar-11"],
+.pricing-list ul li:hover > div[class^="content-calendar-12"] {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .post-entry ul {
     padding: 0;
     margin: 20px 0 20px;
@@ -8133,6 +8272,18 @@ html {
     color: white;
 }
 @media (max-width: 768px) {
+    .content-calendar,
+    .content-calendar-2 {
+        width: 100%;
+    }
+    .content-calendar,
+    .content-calendar-2 {
+        padding: 15px;
+    }
+    .content-calendar ul li,
+    .content-calendar-2 ul li {
+        font-size: 14px;
+    }
     .form-control {
         font-size: 0.7rem;
     }
