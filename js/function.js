@@ -490,3 +490,88 @@ document.addEventListener('DOMContentLoaded', function () {
     updateActiveLink();
 
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Process each pricing box separately
+    document.querySelectorAll('.pricing-box').forEach(pricingBox => {
+        const ul = pricingBox.querySelector('.pricing-list ul, .pricing-list-pakeges ul');
+        if (!ul) return;
+
+        let liCount = 0;
+        let collect = false;
+        const hiddenElements = [];
+
+        // Iterate through all child elements of the UL
+        Array.from(ul.children).forEach(child => {
+            if (child.tagName === 'LI') {
+                liCount++;
+                if (liCount === 5) collect = true;
+                else if (liCount > 5) hiddenElements.push(child);
+            } else {
+                if (collect) hiddenElements.push(child);
+            }
+        });
+
+        if (hiddenElements.length > 0) {
+            // Hide extra elements initially
+            hiddenElements.forEach(el => el.classList.add('hidden'));
+
+            // Create and add the Read More button
+            const button = document.createElement('button');
+            button.className = 'read-more-btn';
+            button.textContent = 'Read more';
+
+            // Insert button after the list
+            ul.parentNode.appendChild(button);
+
+            // Toggle functionality for this specific section
+            button.addEventListener('click', function () {
+                hiddenElements.forEach(el => el.classList.toggle('hidden'));
+                this.textContent = this.textContent === 'Read more'
+                    ? 'Read less'
+                    : 'Read more';
+            });
+        }
+    });
+});
+
+document.querySelector('.getQuote').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('.order-popup').style.display = 'block';
+});
+
+document.querySelector('.order-popup .overlay').addEventListener('click', function (e) {
+    const formContainer = document.querySelector('.contact-us-form');
+    if (!formContainer.contains(e.target)) {
+        document.querySelector('.order-popup').style.display = 'none';
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const popup = document.querySelector('.form-popup');
+
+    // Show popup after 10 seconds
+    setTimeout(() => {
+        popup.style.display = 'block';
+    }, 10000);
+
+    // Close popup when clicking outside
+    document.addEventListener('click', function (event) {
+        if (popup.style.display === 'block') {
+            // Check if click is outside the form content
+            const isClickInside = event.target.closest('.card');
+            const isPopup = event.target.closest('.form-popup');
+
+            if (!isClickInside && isPopup) {
+                popup.style.display = 'none';
+            }
+        }
+    });
+});
+// Add click handler to all list items
+document.querySelectorAll('.box-pricing-2 ul li').forEach(item => {
+    item.addEventListener('click', function () {
+        // Toggle the 'selected' class
+        this.classList.toggle('selected');
+    });
+});
